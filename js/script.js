@@ -1,6 +1,7 @@
 var fgImage = null;
 var bgImage = null;
 
+//javascript to load fgimage
 function loadfgimages() {
   var imgFile = document.getElementById("fgfile");
   fgImage = new SimpleImage(imgFile);
@@ -8,6 +9,7 @@ function loadfgimages() {
   fgImage.drawTo(canvas);  
 }
 
+//javascript to load bgimage
 function loadbgimages() {
   var imgFile = document.getElementById("bgfile");
   bgImage = new SimpleImage(imgFile);
