@@ -1,0 +1,9 @@
+canvas {
+    width: 400px;
+    height: 250px;
+    border: 1px solid #3f81bf;
+    background-color: rgba(255, 255, 255, 0.87);
+  }
+  body {
+    margin: 30px
+  }
