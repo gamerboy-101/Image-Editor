@@ -11,20 +11,21 @@ function loadfgimages() {
 
 //javascript to load bgimage
 function loadbgimages() {
-  var imgFile = document.getElementById("bgfile");
+  var imgFile = document.getElementById("bigfile");
   bgImage = new SimpleImage(imgFile);
-  var canvas = document.getElementById("bgcan");
+  var canvas = document.getElementById("bigcan");
   bgImage.drawTo(canvas);  
 }
 
 function greenscreen() {
   if (fgImage == null || ! fgImage.complete()) {
-    alert("foreground not loaded");
+    alert("foreground is not loaded");
     return;
   }
   if (bgImage == null || ! bgImage.complete()) {
-     alert("background not loaded");
+     alert("background has not loaded");
   }
+
   
   var blueThreshold = 145;
    var output = new SimpleImage(fgImage.getWidth(), fgImage.getHeight());
@@ -51,7 +52,7 @@ function doClear(canvas) {
 
 function clearCanvas() {
   var fgcanvas = document.getElementById("fgcan");
-  var bgcanvas = document.getElementById("bgcan");
+  var bgcanvas = document.getElementById("bigcan");
 
   doClear(fgcanvas);
   doClear(bgcanvas);
