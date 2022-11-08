@@ -1,3 +1,40 @@
+.tricon {
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+.menu {
+  width: 18%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0px;
+  left: -19%;
+  transition: 1s;
+}
+.menu h2 {
+  color: white;
+  padding: 25px;
+}
+.menu ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+.close {
+  font-size: 40px;
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+.jmenu {
+  left: 0%;
+}
+
+
 canvas {
     width: 400px;
     height: 250px;

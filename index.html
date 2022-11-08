@@ -8,10 +8,26 @@
       <link rel="icon" href="img/chain.png"/>
     </head>
     <body class="p-3 mb-2 bg-dark text-white">
+      <div>
+        <span class="tricon" id="tricon" onclick="function showmenu()">&#9776;</span>
+        <div class="menu" id="divmenu">
+            <span class="close" id="Xclose" onclick="function closemenu()">&times;</span>
+            <h2><img src="img/logo.jpg">MindCraft</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Enquiry</a></li>
+            </ul>
+        </div>
+    </div>
+
       <div class="container">
         <h1>Green Screen Webpage</h1>
         <canvas id = "fgcan"></canvas>
-        <canvas id = "bigcan"></canvas>
+        <canvas id = "bgcan"></canvas>
 
         <div class="mb-3" style="width:50%;">
           <!--button to load foreground image-->
@@ -22,7 +38,7 @@
           <!--button to load background image-->
           <p>
             <label for="loadbgimg" class="form-label">background img</label>
-            <input type = "file" multiple = "false" accept = "image/*" id = "bigfile" onchange = "loadbgimages()" class="form-control">
+            <input type = "file" multiple = "false" accept = "image/*" id = "bgfile" onchange = "loadbgimages()" class="form-control">
           </p>
         </div>
 

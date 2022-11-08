@@ -1,3 +1,15 @@
+$(function(){
+  $('#tricon').click(function showmenu(){ 
+      $('#divmenu').addClass('jmenu');
+  });
+});
+$(function(){
+  $('#Xclose').click(function closemenu(){ 
+      $('#divmenu').removeClass('jmenu');
+  });
+});
+
+
 var fgImage = null;
 var bgImage = null;
 
@@ -11,19 +23,19 @@ function loadfgimages() {
 
 //javascript to load bgimage
 function loadbgimages() {
-  var imgFile = document.getElementById("bigfile");
+  var imgFile = document.getElementById("bgfile");
   bgImage = new SimpleImage(imgFile);
-  var canvas = document.getElementById("bigcan");
+  var canvas = document.getElementById("bgcan");
   bgImage.drawTo(canvas);  
 }
 
 function greenscreen() {
   if (fgImage == null || ! fgImage.complete()) {
-    alert("foreground is not loaded");
+    alert("foreground not loaded");
     return;
   }
   if (bgImage == null || ! bgImage.complete()) {
-     alert("background has not loaded");
+     alert("background not loaded");
   }
 
   
@@ -52,7 +64,7 @@ function doClear(canvas) {
 
 function clearCanvas() {
   var fgcanvas = document.getElementById("fgcan");
-  var bgcanvas = document.getElementById("bigcan");
+  var bgcanvas = document.getElementById("bgcan");
 
   doClear(fgcanvas);
   doClear(bgcanvas);
