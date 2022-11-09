@@ -1,7 +1,9 @@
+/*sidebar styling*/
 .tricon {
-  font-size: 40px;
-  margin: 10px;
+  font-size: 20px;
+  margin: 20px;
   cursor: pointer;
+  color: black;
 }
 .menu {
   width: 18%;
@@ -25,10 +27,9 @@
 }
 .close {
   font-size: 40px;
-  color: red;
+  color: white;
   cursor: pointer;
   position: absolute;
-  right: 10px;
 }
 .jmenu {
   left: 0%;
@@ -40,7 +41,4 @@ canvas {
     height: 250px;
     border: 1px solid #3f81bf;
     background-color: rgba(255, 255, 255, 0.87);
-  }
-  body {
-    margin: 30px
   }
